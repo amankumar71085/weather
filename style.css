@@ -1,0 +1,45 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 1rem;
+        }
+        .search-bar {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        .search-bar:focus-within {
+             background: rgba(255, 255, 255, 0.5);
+        }
+        .search-input {
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+
+        .forecast-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        .forecast-container::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        .forecast-container::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+        .forecast-container::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.7);
+        }
+        .hidden {
+            display: none;
+        }
